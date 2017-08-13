@@ -9,12 +9,6 @@ public class InteractiveConstruct{
 
 		Scanner in = new Scanner(System.in);
 
-		System.out.print("Enter Array Size: ");
-		int arrSize = in.nextInt();
-
-		DataStructures data = new DataStructures(arrSize);
-		data.printValues();
-
 		System.out.println("1. Basic Data Structures");
 		System.out.println("2. Stack");
 		System.out.println("3. Queue");
@@ -24,6 +18,12 @@ public class InteractiveConstruct{
 
 		switch(option){
 			case 1:
+				System.out.print("Enter Array Size: ");
+				int arrSize = in.nextInt();
+
+				DataStructures data = new DataStructures(arrSize);
+				data.printValues();
+
 				System.out.println("What process do you want to go through?");
 
 				System.out.println("1. Get number at Index");
@@ -36,6 +36,7 @@ public class InteractiveConstruct{
 				int choice = in.nextInt();
 
 				switch(choice){
+
 					// Cases
 					case 1:
 						System.out.print("Enter Index: ");
